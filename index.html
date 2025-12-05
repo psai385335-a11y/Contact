@@ -144,13 +144,13 @@ button[type="submit"]:hover {
         <button class="close-btn" id="closeBtn">×</button>
         <div class="popup-content">
             <h2>Contact Us</h2>
-            <form id="contactForm">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="tel" name="mobile" placeholder="Phone Number" required>
-                <textarea name="message" rows="3" placeholder="Your Message"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+            <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="d0ae3496-8dda-4a22-9989-0d4e4180a1cc">
+  <input type="text" name="name" required>
+  <input type="email" name="email" required>
+  <textarea name="message" required></textarea>
+  <button type="submit">Submit</button>
+</form>
         </div>
     </div>
 </div>
